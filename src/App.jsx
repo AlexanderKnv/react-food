@@ -13,7 +13,9 @@ function App() {
         <Header />
         <main className="container content">
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/">
+              <Home />
+            </Route>
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route component={NotFound} />
